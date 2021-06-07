@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "WkRWwKEM5kfqLKjyi5BvjORX8iIZJCkFtJR75AszmnBl/oHwEQ5HPRnTbDtqklonGTt1J79t2DLVcSgvgEhH5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Stefan\\Desktop\\RA_230_2017_Stefan_Petrovic\\HCI_MAP\\HCI_MAP\\HCI_MAP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stefan\\.nuget\\packages\\extended.wpf.toolkit\\4.0.2\\extended.wpf.toolkit.4.0.2.nupkg.sha512",
+    "C:\\Users\\Stefan\\.nuget\\packages\\wpfsharp.globalizer\\1.0.6\\wpfsharp.globalizer.1.0.6.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Extended.Wpf.Toolkit 4.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WPFSharp.Globalizer 1.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "WPFSharp.Globalizer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

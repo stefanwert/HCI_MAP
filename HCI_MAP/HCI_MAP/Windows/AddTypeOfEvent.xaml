@@ -1,0 +1,43 @@
+﻿<Window x:Class="HCI_MAP.Windows.AddTypeOfEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="NoResize"
+        xmlns:local="clr-namespace:HCI_MAP.Windows"
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource CustomWindowStyle}"
+        mc:Ignorable="d"
+        Title="{DynamicResource ResourceKey=AddTypeOfEvent}" Height="600" Width="600" Unloaded="Window_Unloaded">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Center" Foreground="Green" Margin="40 20 0 0 " FontSize="28" Grid.Column="0" Content="{DynamicResource ResourceKey=Name2}"/>
+            <TextBox  BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="Name"  Margin="0 20 100 0 " FontSize="28" Grid.Column="1" ></TextBox>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Center" Foreground="Green" Margin="40 20 0 0 " FontSize="28" Grid.Column="0" Content="{DynamicResource ResourceKey=Unique_mark}"/>
+            <TextBox  BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="UniqueMark"  Margin="0 20 100 0 " FontSize="28" Grid.Column="1" ></TextBox>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Center" Foreground="Green" Margin="40 20 0 0 " FontSize="28" Grid.Column="0" Content="{DynamicResource ResourceKey=Description2}"/> 
+            <TextBox  BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="Description"  Margin="0 20 100 0 " FontSize="28" Grid.Column="1"></TextBox>
+        </Grid>
+        <Button Name="btnLoadFromFile" Width="200" FontSize="28" Margin="30" Click="BtnLoadFromFile_Click" Content="{DynamicResource ResourceKey=LoadFromFile}"/>
+        <ScrollViewer Height="180" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <Image Name="imgDynamic" Margin="10"  />
+        </ScrollViewer>
+        <Button FontSize="28" Width="250" Margin="20" Click="AddTypeOfEventClick" Content="{DynamicResource ResourceKey=AddTypeOfEvent}"/>
+    </StackPanel>
+</Window>

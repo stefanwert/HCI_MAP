@@ -1,0 +1,71 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- The name of this ResourceDictionary. Should not be localized. -->
+    <sys:String x:Key="ResourceDictionaryName" Localization.Comments="$Content(DoNotLocalize)">Loc-SRB</sys:String>
+    <!-- Localized strings -->
+    <sys:String x:Key="MainWindow_Title">Dogadjaji</sys:String>
+    <sys:String x:Key="Search">Pretraga</sys:String>
+    <sys:String x:Key="Add">Dodaj</sys:String>
+    <sys:String x:Key="Edit">Izmeni</sys:String>
+    <sys:String x:Key="Remove">Obrisi</sys:String>
+    <sys:String x:Key="ShowStickyNotes">Prikazi beleske</sys:String>
+    <sys:String x:Key="GoToMap">Idi na mapu</sys:String>
+
+    <sys:String x:Key="Name">Ime</sys:String>
+    <sys:String x:Key="Price">Cena</sys:String>
+    <sys:String x:Key="Country">Drzava</sys:String>
+    <sys:String x:Key="City">Grad</sys:String>
+    <sys:String x:Key="Place">Mesto</sys:String>
+    <sys:String x:Key="Description">Opis</sys:String>
+    <sys:String x:Key="Lenguage">_Jezik</sys:String>
+    <sys:String x:Key="Serbian">_Srpski</sys:String>
+    <sys:String x:Key="English">_Engleski</sys:String>
+    <sys:String x:Key="Themes">_Teme</sys:String>
+    <sys:String x:Key="Dark">_Tamna</sys:String>
+    <sys:String x:Key="Light">_Svetla</sys:String>
+    
+    <!--AddEvent,EditEvent window -->
+    <sys:String x:Key="Name2">Ime:</sys:String>
+    <sys:String x:Key="Price2">Cena($):</sys:String>
+    <sys:String x:Key="Country2">Drzava:</sys:String>
+    <sys:String x:Key="City2">Grad:</sys:String>
+    <sys:String x:Key="Place2">Mesto:</sys:String>
+    <sys:String x:Key="Description2">Opis:</sys:String>
+    <sys:String x:Key="Unique_mark">Oznaka:</sys:String>
+    <sys:String x:Key="Unique_mark2">Oznaka</sys:String>
+    <sys:String x:Key="AddEventD">Dodaj dogadjaj:</sys:String>
+    <sys:String x:Key="AddEvent">Dodaj</sys:String>
+    <sys:String x:Key="Attendance">Posecenost:</sys:String>
+    <sys:String x:Key="TypeOfEvent">Tip dogadjaja:</sys:String>
+    <sys:String x:Key="DatesOfMaintenance">Datumi odrzavanja(prosli):</sys:String>
+    <sys:String x:Key="EditEventD">Izmeni dogadjaj:</sys:String>
+    <sys:String x:Key="EditEvent">Izmeni</sys:String>
+    <sys:String x:Key="Delete">Izbrisi</sys:String>
+    <sys:String x:Key="AddNewDate">Dodaj novi datum:</sys:String>
+    <sys:String x:Key="SelectedDates">Izabrani datumi:</sys:String>
+    <sys:String x:Key="DateOfMeaintenance">Datum:</sys:String>
+    <sys:String x:Key="LoadFromFile">Ucitaj iz fajla</sys:String>
+    <sys:String x:Key="AddTypeOfEvent">Dodaj tip dogadjaja</sys:String>
+    <sys:String x:Key="TypeOfEvent2">Tipovi dogadjaja</sys:String>
+    <sys:String x:Key="Clear">Ocisti</sys:String>
+    <sys:String x:Key="DeleteEventFromMap">Obrisi dogadjaj</sys:String>
+
+    <!-- AddStickyNote window-->
+    <sys:String x:Key="Color">Boja:</sys:String>
+    <sys:String x:Key="AddNote">Dodaj belesku</sys:String>
+    <sys:String x:Key="EditNote">Izmeni belesku</sys:String>
+    <sys:String x:Key="StickyNotes">Beleske</sys:String>
+    <sys:String x:Key="StickyNoteTable">Beleske tabela</sys:String>
+    <sys:String x:Key="EditStickyNote">Izmeni belesku</sys:String>
+    <sys:String x:Key="AddStickyNote">Dodaj belesku</sys:String>
+
+    <!-- Menu -->
+    <sys:String x:Key="Windows">Prozori</sys:String>
+    <sys:String x:Key="EventTable">Tabela dogadjaja</sys:String>
+    <sys:String x:Key="TypeOfEventTable">Tabela tipa dogadjaja</sys:String>
+    <sys:String x:Key="Map">Mapa</sys:String>
+    <sys:String x:Key="Help">Pomoc</sys:String>
+
+    <sys:String x:Key="Shortcuts">Precice:</sys:String>
+</ResourceDictionary>

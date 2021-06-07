@@ -1,0 +1,23 @@
+﻿<Window x:Class="HCI_MAP.Windows.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_MAP.Windows"
+        mc:Ignorable="d"
+        Style="{DynamicResource CustomWindowStyle}"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="{DynamicResource ResourceKey=Help}" Height="450" Width="350">
+    <StackPanel Margin="30">
+        <TextBlock HorizontalAlignment="Left" FontSize="30" Text="{DynamicResource ResourceKey=Shortcuts}"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Add -> ctrl+A </TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Edit -> ctrl+E</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Delete -> ctrl+D</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Theme -> ctrl+T</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Lenguage -> ctrl+L</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Events table -> ctrl+F1</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Type of events table -> ctrl+F2</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="20">Map -> ctrl+F3</TextBlock>
+    </StackPanel>
+</Window>

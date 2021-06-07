@@ -1,0 +1,40 @@
+﻿<Window x:Class="HCI_MAP.Windows.StickyNoteTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        xmlns:local="clr-namespace:HCI_MAP.Windows"
+        mc:Ignorable="d"
+        Style="{DynamicResource CustomWindowStyle}"
+        Title="{DynamicResource ResourceKey=StickyNoteTable}"
+        Height="750" Width="900">
+    <StackPanel DataContext="{Binding Event}">
+        <TextBlock FontSize="40" Foreground="Green" HorizontalAlignment="Center" Text="{DynamicResource ResourceKey=StickyNotes}"/>
+        <DataGrid Foreground="Green" x:Name="table" ItemsSource="{Binding StickyNotes, Mode=TwoWay}" IsReadOnly="True" 
+                  SelectionMode="Single" AutoGenerateColumns="False" HorizontalAlignment="Left" 
+                  Height="577" Margin="0,0,-0.4,15" VerticalAlignment="Top" Width="900" FontSize="32">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Description}" Width="*" >
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="{DynamicResource ResourceKey=Description}"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Human_description}" Width="*">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="{DynamicResource ResourceKey=Unique_mark2}"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button FontWeight="DemiBold" Margin="10" Content="{DynamicResource ResourceKey=Add}" HorizontalAlignment="Left" FontSize="32" Width="150" Click="addStickyNote"/>
+            <Button FontWeight="DemiBold" Margin="10" Content="{DynamicResource ResourceKey=Edit}" HorizontalAlignment="Left" FontSize="32" Width="150" Click="editStickyNote"/>
+            <Button FontWeight="DemiBold" Margin="10" Content="{DynamicResource ResourceKey=Remove}" HorizontalAlignment="Left" FontSize="32" Width="150" Click="removeStickyNote"/>
+      
+        </StackPanel>
+        
+    </StackPanel>
+</Window>

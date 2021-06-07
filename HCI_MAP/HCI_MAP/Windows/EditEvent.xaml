@@ -1,0 +1,128 @@
+﻿<Window x:Class="HCI_MAP.Windows.EditEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_MAP.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource CustomWindowStyle}"
+        ResizeMode="NoResize"
+        Title="{DynamicResource ResourceKey=EditEvent}" Height="650" Width="850">
+    <StackPanel>
+        <Label Foreground="Green" FontSize="28" HorizontalAlignment="Center" Content="{DynamicResource ResourceKey=EditEventD}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" DataContext="{Binding Event}">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Name2}"/>
+                    <TextBox  BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="Name"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Description2}"/>
+                    <TextBox BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="Description"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=Description,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Price2}"/>
+                    <TextBox LostFocus ="price_LostFocus"  BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="price"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=Price,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Country2}"/>
+                    <TextBox BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="country"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=Country,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=City2}"/>
+                    <TextBox BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="city"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=City,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Place2}"/>
+                    <TextBox BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="place"  Margin="0 20 0 0 " FontSize="24" Grid.Column="1" Text="{Binding Path=Place,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                </Grid>
+
+            </StackPanel>
+            <StackPanel Margin="10 0 0 0" Grid.Column="2">
+                <Grid Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- to do-->
+                    <Label Grid.Column="0" HorizontalAlignment="Center" Foreground="Green" FontSize="24" Content="{DynamicResource ResourceKey=Attendance}"/>
+                    <ComboBox Grid.Column="1" Width="200" BorderThickness="0 0 0 5" BorderBrush="Green" x:Name="combo" FontSize="24" HorizontalAlignment="Left" Margin="20 0 20 0"></ComboBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- to do-->
+                    <Label Grid.Column="0" HorizontalAlignment="Center" Foreground="Green" FontSize="24" Margin="0 20 0 0" Content="{DynamicResource ResourceKey=TypeOfEvent}"/>
+                    <StackPanel Orientation="Horizontal"  Grid.Column="1">
+                        <ComboBox  BorderThickness="0 0 0 5" BorderBrush="Green"  SelectedValue="{Binding Path=Name}" DisplayMemberPath="Name" ItemsSource="{Binding Path=TypeOfEventList, Mode=TwoWay}" Width="200" x:Name="comboTypeOfEvent" HorizontalAlignment="Left" FontSize="24" Margin="20 20 0 0"></ComboBox>
+                        <Button Margin="5 20 0 0" Click ="AddTypeOfEvent"  FontSize="24" Content="{DynamicResource ResourceKey=Add}"/>
+                    </StackPanel>
+                </Grid>
+
+                <StackPanel>
+                    <Label HorizontalAlignment="Center" Foreground="Green" Margin="20 20 0 0 " FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=DatesOfMaintenance}"/>
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="30 30 30 0">
+                        <StackPanel>
+                            <Label FontSize="16" Content="{DynamicResource ResourceKey=AddNewDate}"/>
+                            <DatePicker Foreground="Green" Name="datePicker2" SelectedDateChanged="DatePicker_SelectedDateChanged" Height="60" FontSize="16"></DatePicker>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="30 0 0 0"  DataContext="{Binding Event}">
+                            <Label FontSize="16" Content="{DynamicResource ResourceKey=SelectedDates}"/>
+                            <ListBox Foreground="Green" Name="listBoxOfDates" ItemsSource="{Binding DateTimes, Mode=TwoWay}" Height="100" Width="115" />
+                            <Button FontSize="18" Width="90" Click="removeSelectedDate"  Margin="0 5 0 0" Content="{DynamicResource ResourceKey=Delete}"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" DataContext="{Binding Event}">
+            <Label HorizontalAlignment="left" Foreground="Green" Margin="20,20,0,0" FontSize="24" Grid.Column="0" Content="{DynamicResource ResourceKey=Unique_mark}"/>
+            <TextBox x:Name="Human_description" MaxHeight="80" TextWrapping="Wrap" FontSize="24" Grid.Column="1" Width="350" Margin="20 15 0 0" Text="{Binding Path=Human_description,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            <Label Margin="10 20 0 0" FontSize="24" Content="{DynamicResource ResourceKey=DateOfMaintenance}"/>
+            <DatePicker x:Name="datePicker" VerticalAlignment="Top" Margin="10 20 0 0" FontSize="24" Foreground="Green" Height="60"></DatePicker>
+        </StackPanel>
+        <StackPanel Margin="0 20 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
+
+        </StackPanel>
+
+        <Button Margin="0 10 0 0" FontWeight="DemiBold" Content="{DynamicResource ResourceKey=EditEvent}" FontSize="24" HorizontalAlignment="Center" Width="200" Click="editClick"/>
+    </StackPanel>
+</Window>

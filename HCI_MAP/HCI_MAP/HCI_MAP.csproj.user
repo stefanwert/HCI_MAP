@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Help\HelpViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\AddEvent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\AddStickyNote.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\AddTypeOfEvent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\EditEvent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\EditStickyNote.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\EditTypeOfEvent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\help.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Map.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\StickyNoteTable.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\TypeOfEventTable.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Lenguage\en-US\en-US.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Update="Lenguage\SRB\SRB.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Page Update="Help\HelpViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DatePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\AddEvent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\AddStickyNote.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\AddTypeOfEvent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\EditEvent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\EditStickyNote.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\EditTypeOfEvent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Help.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Map.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\StickyNoteTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\TypeOfEventTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
